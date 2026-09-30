@@ -1,2 +1,2 @@
 # Odoo_ERP_System_Assigment
-Manual functional testing of the Odoo Purchase Module with 33 test cases, Jira defect tracking, test documentation, and comprehensive functional test strategy coverage.
+Odoo Purchase Module – Functional Testing is a manual software testing project focused on validating the core functionality of the Odoo Purchase Module. The project covers login, product management, vendor management, RFQ management, purchase order workflows, and functional test strategy coverage using positive testing, negative testing, boundary value analysis, and error guessing. It includes 33 test cases, defect identification and Jira-based bug tracking, a test plan, test summary report, defect report, test case Excel sheet, and functional testing mind map.
