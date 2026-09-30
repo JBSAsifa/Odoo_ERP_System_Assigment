@@ -1,0 +1,80 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Actual end),Custom field (Actual start),Custom field (Approvals),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Impact),Custom field (Incident manager),Custom field (Investigation reason),Custom field (Issue colour),Custom field (Locked forms),Custom field (Open forms),Custom field (Operational categorization),Custom field (Pending reason),Custom field (Product categorization),Custom field (Rank),Custom field (Request participants),Custom field (Root cause),Satisfaction rating,Custom field (Satisfaction date),Custom field (Source),Custom field (Start date),Custom field (Submitted forms),Custom field (Team),Custom field (Time to done),Custom field (Time to first response),Custom field (Time to review normal change),Custom field (Time to triage normal change),Custom field (Total forms),Custom field (Urgency),Custom field (Workaround),Status Category,Status Category Changed
+Product can be saved without Product Name,AS-1,10053,Bug,To Do,AS,Odoo Purchase Module Testing,software,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,High,,,,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,27/Sep/26 4:06 AM,27/Sep/26 4:20 AM,27/Sep/26 4:26 AM,,,0,"h3. *Steps to Reproduce*
+
+# Navigate to Product creation page
+
+# Leave the Product Name field empty
+
+# Enter a price value
+
+# Click Save
+
+*Expected Result*
+
+System should prevent saving a product without a product name.
+
+*Actual Result*
+
+The product is saved even though the Product Name field is empty; no blocking validation error is shown.",,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,{},,,,,,,,,,0|i0003j:,,,,,,,,,,,,,,,,To Do,27/Sep/26 4:06 AM
+Duplicate vendor warning not displayed,AS-2,10054,Bug,To Do,AS,Odoo Purchase Module Testing,software,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,High,,,,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,27/Sep/26 4:08 AM,27/Sep/26 4:24 AM,27/Sep/26 4:20 AM,,,0,"*Steps to Reproduce*
+
+# Create a vendor, e.g. ""ABC Supplier Ltd""
+
+# Save the vendor
+
+# Create another vendor with the same name
+
+# Save
+
+*Expected Result*
+
+System should display a duplicate-vendor warning.
+
+*Actual Result*
+
+The duplicate vendor is saved successfully with no warning shown.",,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,{},,,,,,,,,,0|i0003x:,,,,,,,,,,,,,,,,To Do,27/Sep/26 4:08 AM
+RFQ line does not auto-populate unit/price,AS-3,10055,Bug,In Progress,AS,Odoo Purchase Module Testing,software,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,High,,,,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,27/Sep/26 4:08 AM,27/Sep/26 4:25 AM,27/Sep/26 4:24 AM,,,0,"*Steps to Reproduce*
+
+# Create a new RFQ
+
+# Select a vendor
+
+# Add a product line and select a product
+
+*Expected Result*
+
+The product's unit and price should auto-populate on the RFQ line.
+
+*Actual Result*
+
+The unit shows but price does not auto-populate on the line.",,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,{},,,,,,,,,,0|i00043:,,,,,,,,,,,,,,,,In Progress,27/Sep/26 4:11 AM
+RFQ allows quantity value 0 without validation,AS-4,10056,Bug,Done,AS,Odoo Purchase Module Testing,software,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,High,Done,,,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,27/Sep/26 4:09 AM,27/Sep/26 4:25 AM,27/Sep/26 4:25 AM,27/Sep/26 4:12 AM,,0,"*Steps to Reproduce*
+
+# Create an RFQ
+
+# Add a product line
+
+# Enter quantity = 0
+
+# Save the RFQ
+
+*Expected Result*
+
+System should show a validation message for an invalid quantity.
+
+*Actual Result*
+
+The RFQ is saved successfully with quantity 0 and no validation message.",,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,{},,,,,,,,,,0|i0004g:,,,,,,,,,,,,,,,,Done,27/Sep/26 4:12 AM
+Purchase order report preview not generated,AS-5,10057,Bug,In Progress,AS,Odoo Purchase Module Testing,software,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,High,,,,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,27/Sep/26 4:10 AM,27/Sep/26 4:26 AM,27/Sep/26 4:26 AM,,,0,"*Steps to Reproduce*
+
+# Confirm the RFQ into a Purchase Order
+
+# Click Print → Purchase Order
+
+*Expected Result*
+
+The report preview should open.
+
+*Actual Result*
+
+The report preview does not open.",,Joinab Binte Siraj Asifa,712020:a3d70822-76fe-40ce-97a4-ec9266e2c17a,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,{},,,,,,,,,,0|i0004l:,,,,,,,,,,,,,,,,In Progress,27/Sep/26 4:12 AM
